@@ -1,0 +1,97 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    padding: -10px;
+    margin: -10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.buttonsWithHeader{
+    display: flex;
+    flex-direction: column;
+}
+.containerButtons{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.box{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E0B32B;
+    width: 200px;
+    border: none;
+}
+.populationHeader{
+    display:flex;
+}
+.populationHeaderClosed{
+    display: none;
+}
+.languagesHeader{
+    display: none;
+}
+.languagesHeaderOpen{
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    .containerButtons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .box {
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .name {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .barContainer {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .value {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .sectionTitle {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: 90%;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .sectionTitle {
+        font-size: 1.1rem;
+    }
+    
+    .name {
+        font-size: 0.9rem;
+    }
+    
+    .value {
+        font-size: 0.9rem;
+    }
+}
